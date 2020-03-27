@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>Use this site to get your weather!</p>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="firsNameID" name="fname" placeholder="Name"><br><br>
+            <label for="location">Your Location:</label>
+            <input type="text" id="locationID" name="location" placeholder="Location"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+        <p id="p1ID"></p>
+        <p id="p2ID"></p>
+        <p id="p3ID"></p>
+
+    {{>footer}}
+        <script src="/js/app.js"></script>
+
+
+
+</body>
+
+
+</html>
